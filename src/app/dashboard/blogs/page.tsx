@@ -33,8 +33,15 @@ export default function BlogManagement() {
     if (!file) return;
 
     setUploading(true);
+
+    // cleanup old image if exists
+    if (form.cover_image && form.cover_image.includes('website_assets')) {
+      const oldPath = form.cover_image.split('website_assets/')[1]?.split('?')[0];
+      if (oldPath) await supabase.storage.from('website_assets').remove([oldPath]);
+    }
+
     const fileExt = file.name.split('.').pop();
-    const fileName = `${Math.random()}.${fileExt}`;
+    const fileName = `${Date.now()}.${fileExt}`;
     const filePath = `blogs/${fileName}`;
 
     const { error: uploadError } = await supabase.storage
@@ -117,6 +124,11 @@ export default function BlogManagement() {
 
   const handleDelete = async (id: string) => {
     if (confirm('Delete this blog?')) {
+        const blog = blogs.find(b => b.id === id);
+        if (blog?.cover_image) {
+            const path = blog.cover_image.split('website_assets/')[1]?.split('?')[0];
+            if (path) await supabase.storage.from('website_assets').remove([path]);
+        }
         const { error } = await supabase.from('blogs').delete().eq('id', id);
         if (error) alert('Delete failed: ' + error.message);
         fetchBlogs();

@@ -27,8 +27,19 @@ export default function SiteSettings() {
     if (!file) return;
 
     setUploading(true);
+    
+    // 1. Delete old file if exists
+    const oldUrl = settings[key];
+    if (oldUrl && oldUrl.includes('website_assets')) {
+      const oldPath = oldUrl.split('website_assets/')[1]?.split('?')[0];
+      if (oldPath) {
+        await supabase.storage.from('website_assets').remove([oldPath]);
+      }
+    }
+
+    // 2. Upload new file
     const fileExt = file.name.split('.').pop();
-    const fileName = `${key}_${Math.random()}.${fileExt}`;
+    const fileName = `${key}_${Date.now()}.${fileExt}`;
     const filePath = `settings/${fileName}`;
 
     const { error: uploadError } = await supabase.storage

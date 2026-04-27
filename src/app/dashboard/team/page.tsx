@@ -25,8 +25,15 @@ export default function TeamManagement() {
     if (!file) return;
 
     setUploading(true);
+    
+    // cleanup old image if replacing
+    if (form.image_url && form.image_url.includes('website_assets')) {
+      const oldPath = form.image_url.split('website_assets/')[1]?.split('?')[0];
+      if (oldPath) await supabase.storage.from('website_assets').remove([oldPath]);
+    }
+
     const fileExt = file.name.split('.').pop();
-    const fileName = `${Math.random()}.${fileExt}`;
+    const fileName = `${Date.now()}.${fileExt}`;
     const filePath = `team/${fileName}`;
 
     const { error: uploadError } = await supabase.storage
@@ -86,6 +93,11 @@ export default function TeamManagement() {
 
   const handleDelete = async (id: string) => {
     if (confirm('Are you sure?')) {
+      const member = members.find(m => m.id === id);
+      if (member?.image_url) {
+        const path = member.image_url.split('website_assets/')[1]?.split('?')[0];
+        if (path) await supabase.storage.from('website_assets').remove([path]);
+      }
       const { error } = await supabase.from('team_members').delete().eq('id', id);
       if (error) alert(error.message);
       fetchMembers();
