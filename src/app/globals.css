@@ -123,9 +123,11 @@ img { max-width: 100%; height: auto; display: block; }
    Buttons
    ========================================================================== */
 .btn-primary {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: var(--accent);
-  color: var(--white);
+  color: var(--white) !important;
   padding: 14px 34px;
   font-weight: 600;
   font-family: var(--font-body);
@@ -136,7 +138,8 @@ img { max-width: 100%; height: auto; display: block; }
   font-size: 0.82rem;
   position: relative;
   overflow: hidden;
-  transition: color var(--transition), background var(--transition);
+  transition: all var(--transition);
+  z-index: 1;
 }
 
 .btn-primary::before {
@@ -147,12 +150,25 @@ img { max-width: 100%; height: auto; display: block; }
   transform: scaleX(0);
   transform-origin: right;
   transition: transform var(--transition);
-  z-index: 0;
+  z-index: -1;
 }
 
-.btn-primary:hover::before { transform: scaleX(1); transform-origin: left; }
-.btn-primary:hover { color: var(--white); opacity: 0.95; }
-.btn-primary span, .btn-primary div { position: relative; z-index: 1; }
+.btn-primary:hover::before { 
+  transform: scaleX(1); 
+  transform-origin: left; 
+}
+
+.btn-primary:hover { 
+  color: var(--white) !important; 
+  box-shadow: 0 10px 40px rgba(197, 160, 89, 0.3);
+  border-color: var(--primary);
+}
+
+/* Ensure all content inside primary button is above the hover effect */
+.btn-primary > * {
+  position: relative;
+  z-index: 2;
+}
 
 .btn-outline {
   display: inline-block;
