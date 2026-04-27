@@ -89,7 +89,7 @@ export default function Contact() {
               <div className="info-icon"><i className="fa-solid fa-envelope" /></div>
               <div>
                 <h4>Email Us</h4>
-                <p>consult@alavilaw.pk</p>
+                <p>consult@ellavilaw.pk</p>
               </div>
             </div>
             <div className="office-hours-card">

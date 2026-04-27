@@ -22,7 +22,7 @@ export default function GallerySection() {
           <h2 className="section-title">Chamber Gallery</h2>
           <div className="divider" />
           <p className="section-subtitle">
-            A glimpse inside Alavi Law Chamber and our professional environment.
+            A glimpse inside Ellavi Law Chamber and our professional environment.
           </p>
         </div>
 

@@ -19,7 +19,7 @@ export default function Marquee() {
       const { data: blogsData } = await supabase.from('blogs').select('title').limit(3);
       const blogTitles = (blogsData || []).map(b => `INSIGHT: ${b.title}`);
       
-      setUpdates([...newsItems, ...blogTitles, 'Alavi Law Chamber - Professional Legal Excellence']);
+      setUpdates([...newsItems, ...blogTitles, 'Ellavi Law Chamber - Professional Legal Excellence']);
     };
     fetchData();
   }, []);

@@ -20,7 +20,7 @@ export default function Testimonials() {
       } else {
         // Fallback to initial data if DB is empty
         setTestimonials([
-          { text: 'Alavi Law Chamber resolved our corporate dispute in record time.', name: 'Khalid Rahman', role: 'CEO, Rahman Industries', initial: 'K', stars: 5 },
+          { text: 'Ellavi Law Chamber resolved our corporate dispute in record time.', name: 'Khalid Rahman', role: 'CEO, Rahman Industries', initial: 'K', stars: 5 },
           { text: 'Outstanding litigation skills. Highly recommended.', name: 'Tariq Mehmood', role: 'Director, Mehmood Developers', initial: 'T', stars: 5 }
         ]);
       }

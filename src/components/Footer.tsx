@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <a href="#home" className="logo">
-              <span className="logo-main">ALAVI</span>
+              <span className="logo-main">ELLAVI</span>
               <span className="logo-sub">LAW CHAMBER</span>
             </a>
             <p className="footer-desc">
@@ -65,8 +65,8 @@ export default function Footer() {
         </div>
 
         <div className="footer-bottom">
-          <p>© {year} Alavi Law Chamber. All Rights Reserved. Islamabad, Pakistan.</p>
-          <a href="mailto:consult@alavilaw.pk">consult@alavilaw.pk</a>
+          <p>© {year} Ellavi Law Chamber. All Rights Reserved. Islamabad, Pakistan.</p>
+          <a href="mailto:consult@ellavilaw.pk">consult@ellavilaw.pk</a>
         </div>
       </div>
     </footer>

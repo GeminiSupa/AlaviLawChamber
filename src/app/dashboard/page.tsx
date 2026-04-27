@@ -33,7 +33,7 @@ export default function DashboardPage() {
     <div className="dashboard-overview">
       <header className="page-header">
         <h1>Dashboard Overview</h1>
-        <p>Welcome to the Alavi Law Chamber administrative portal.</p>
+        <p>Welcome to the Ellavi Law Chamber administrative portal.</p>
       </header>
 
       <div className="stats-cards">

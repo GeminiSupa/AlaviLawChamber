@@ -89,7 +89,7 @@ export default function GalleryManagement() {
     <div className="gallery-mgmt">
       <header className="page-header">
         <h1>Photo Hub</h1>
-        <p>Curate the gallery of Alavi Law Chamber.</p>
+        <p>Curate the gallery of Ellavi Law Chamber.</p>
       </header>
 
       <div className="layout-grid mt-4">

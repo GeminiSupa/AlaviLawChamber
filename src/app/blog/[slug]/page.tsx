@@ -58,7 +58,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
             <div className="blog-sidebar-cta">
               <div className="cta-card">
                 <h3>Need Legal Advice?</h3>
-                <p>Consult with Alavi Law Chamber today for expert guidance on your case.</p>
+                <p>Consult with Ellavi Law Chamber today for expert guidance on your case.</p>
                 <a href="/#contact" className="btn-primary w-100">
                   <span>Schedule Consultation</span>
                 </a>

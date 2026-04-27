@@ -32,7 +32,7 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-card">
         <div className="text-center mb-4">
-          <div className="logo-main" style={{ color: 'var(--primary)', marginBottom: '10px' }}>ALAVI</div>
+          <div className="logo-main" style={{ color: 'var(--primary)', marginBottom: '10px' }}>ELLAVI</div>
           <div className="logo-sub">Chamber Admin</div>
         </div>
 
@@ -49,7 +49,7 @@ export default function LoginPage() {
               required
               className="w-100"
               style={{ padding: '12px', border: '1px solid var(--border)', borderRadius: 'var(--radius)' }}
-              placeholder="admin@alavilaw.pk"
+              placeholder="admin@ellavilaw.pk"
             />
           </div>
 

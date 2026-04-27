@@ -54,7 +54,7 @@ export default function About() {
           <div className="about-image-wrap reveal-left">
             <img
               src={img}
-              alt="Senior Partner, Alavi Law Chamber Islamabad"
+              alt="Senior Partner, Ellavi Law Chamber Islamabad"
               className="about-img"
             />
             <div className="experience-badge">

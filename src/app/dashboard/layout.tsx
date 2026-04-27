@@ -61,7 +61,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className="dashboard-layout">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <div className="logo-main" style={{ fontSize: '1.2rem' }}>ALAVI</div>
+          <div className="logo-main" style={{ fontSize: '1.2rem' }}>ELLAVI</div>
           <div className="logo-sub">ADMIN PANEL</div>
         </div>
         

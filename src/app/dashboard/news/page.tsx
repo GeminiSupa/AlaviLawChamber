@@ -46,7 +46,7 @@ export default function NewsMgmt() {
           <input 
             value={newContent} 
             onChange={e => setNewContent(e.target.value)} 
-            placeholder="e.g. Alavi Law Chamber Opens New Office in Lahore..." 
+            placeholder="e.g. Ellavi Law Chamber Opens New Office in Lahore..." 
             className="w-100"
             required
           />

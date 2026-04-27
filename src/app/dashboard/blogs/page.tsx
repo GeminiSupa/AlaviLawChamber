@@ -12,7 +12,7 @@ export default function BlogManagement() {
     excerpt: '', 
     content: '', 
     cover_image: '', 
-    author_name: 'Alavi Law Chamber',
+    author_name: 'Ellavi Law Chamber',
     published_at: new Date().toISOString().split('T')[0],
     published: true 
   });
@@ -95,7 +95,7 @@ export default function BlogManagement() {
       excerpt: '', 
       content: '', 
       cover_image: '', 
-      author_name: 'Alavi Law Chamber',
+      author_name: 'Ellavi Law Chamber',
       published_at: new Date().toISOString().split('T')[0],
       published: true 
     });
@@ -107,7 +107,7 @@ export default function BlogManagement() {
       excerpt: blog.excerpt, 
       content: blog.content, 
       cover_image: blog.cover_image, 
-      author_name: blog.author_name || 'Alavi Law Chamber',
+      author_name: blog.author_name || 'Ellavi Law Chamber',
       published_at: new Date(blog.published_at || blog.created_at).toISOString().split('T')[0],
       published: blog.published
     });

@@ -57,7 +57,7 @@ export default function Navbar() {
     <nav ref={navRef} className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
       <div className="nav-container">
         <a href="#home" className="logo" onClick={e => { e.preventDefault(); scrollTo('#home'); }}>
-          <span className="logo-main">ALAVI</span>
+          <span className="logo-main">ELLAVI</span>
           <span className="logo-sub">LAW CHAMBER</span>
         </a>
 

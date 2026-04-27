@@ -39,7 +39,7 @@ export default function BlogSection() {
           <div className="divider" />
           <p className="section-subtitle">
             Stay updated with the latest legal developments and expert commentary 
-            from Alavi Law Chamber.
+            from Ellavi Law Chamber.
           </p>
         </div>
 

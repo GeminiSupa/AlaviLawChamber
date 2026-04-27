@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Alavi Law Chamber | Premium Legal Services in Islamabad',
+  title: 'Ellavi Law Chamber | Premium Legal Services in Islamabad',
   description:
-    'Alavi Law Chamber provides high-tier corporate, civil, criminal, and property legal services in Sector 10, Islamabad. Justice with Integrity.',
+    'Ellavi Law Chamber provides high-tier corporate, civil, criminal, and property legal services in Sector 10, Islamabad. Justice with Integrity.',
   keywords: 'law chamber islamabad, lawyer islamabad, corporate law pakistan, criminal defense islamabad',
   openGraph: {
-    title: 'Alavi Law Chamber | Premium Legal Services in Islamabad',
+    title: 'Ellavi Law Chamber | Premium Legal Services in Islamabad',
     description: 'Justice with Integrity. Premier legal representation in Islamabad.',
     type: 'website',
   },
