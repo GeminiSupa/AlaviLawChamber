@@ -31,7 +31,11 @@ export default function Hero() {
       <div className="hero-overlay" />
 
       <div className="hero-content">
-        <div className="hero-eyebrow hero-anim-1">Islamabad&apos;s Premier Legal Chamber</div>
+        <div className="hero-logo-wrap hero-anim-1">
+          <img src="/Ellavi_logo.png" alt="Ellavi Logo" className="logo-img" />
+        </div>
+
+        <div className="hero-eyebrow hero-anim-1" style={{ animationDelay: '0.3s' }}>Islamabad&apos;s Premier Legal Chamber</div>
 
         <h1 className="hero-anim-2">
           Justice with <em>Integrity</em>
