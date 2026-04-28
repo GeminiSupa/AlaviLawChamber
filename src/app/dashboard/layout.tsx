@@ -61,8 +61,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
     <div className="dashboard-layout">
       <aside className="sidebar">
         <div className="sidebar-header">
-          <div className="logo-main" style={{ fontSize: '1.2rem' }}>ELLAVI</div>
-          <div className="logo-sub">ADMIN PANEL</div>
+          <img src="/Ellavi_logo.png" alt="Ellavi Chamber Admin" className="logo-img" style={{ maxWidth: '120px', marginBottom: '10px' }} />
         </div>
         
         <nav className="sidebar-nav">

@@ -8,8 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="footer-brand">
             <a href="#home" className="logo">
-              <span className="logo-main">ELLAVI</span>
-              <span className="logo-sub">LAW CHAMBER</span>
+              <img src="/Ellavi_logo.png" alt="Ellavi Law Chamber" className="logo-img" />
             </a>
             <p className="footer-desc">
               Redefining legal practice in Pakistan through modern infrastructure,

@@ -32,8 +32,7 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-card">
         <div className="text-center mb-4">
-          <div className="logo-main" style={{ color: 'var(--primary)', marginBottom: '10px' }}>ELLAVI</div>
-          <div className="logo-sub">Chamber Admin</div>
+          <img src="/Ellavi_logo.png" alt="Ellavi Chamber Admin" className="logo-img" style={{ maxWidth: '150px', marginBottom: '10px' }} />
         </div>
 
         <form onSubmit={handleLogin}>

@@ -288,6 +288,12 @@ img { max-width: 100%; height: auto; display: block; }
 
 .logo { display: flex; flex-direction: column; align-items: flex-start; }
 
+.logo-img {
+  max-width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
 .logo-main {
   font-family: var(--font-heading);
   font-size: 1.6rem;
